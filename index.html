@@ -1,0 +1,26 @@
+<!-- Neste dashboard, a equipe deve:
+Carregar .csv com o valor de custeio aplicado nas secretarias de: educação, comunicação, saúde e segurança no ano de 2021 (http://transparencia.al.gov.br/despesa/despesas-por-categoria-economica/). 
+Carregar .csv com os favorecidos em pagamentos do governo (http://transparencia.al.gov.br/despesa/despesas-por-favorecido/) 
+Carregar .csv com os repasses aos municípios (http://transparencia.al.gov.br/repasse/repasses-aos-municipios/). 
+Exibir gráfico de colunas mostrando o valor de custeio usando para cada secretaria.
+Exibir lista com os 10 maiores beneficiados em pagementos feitos pelo governo (em montante financeiro) em 2021.
+Exibir lista com os 10 municípios que mais receberam recurso do governo em 2021.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Monitor de Gastos Públicos em Alagoas</title>
+  </head>
+  <body>
+    <div id="graficoPizza"></div>
+    <script src="./custeio.js"></script>
+    <script src="./grafico.js"></script>
+  </body>
+</html>
