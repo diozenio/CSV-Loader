@@ -12,7 +12,7 @@ function desenharGrafico() {
   ]);
 
   var grafico = new google.visualization.ColumnChart(
-    document.getElementById("graficoPizza")
+    document.getElementById("grafico")
   );
   const options = {
       title: "Custeios",
