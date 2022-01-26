@@ -39,3 +39,11 @@ function successFunction(data) {
     }
   }
 }
+
+function order(number) {
+  console.log(number);
+  number.sort(); // aqui ele vai ordernar do menor para o maior
+  console.log(number);
+  number.reverse(); // aqui ele vai inverter as posições fazendo o efeito desejado
+  console.log(number);
+}

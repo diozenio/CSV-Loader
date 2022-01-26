@@ -22,4 +22,4 @@ function desenharGrafico() {
   grafico.draw(tabela, options);
 }
 
-google.charts.setOnLoadCallback(desenharPizza);
+google.charts.setOnLoadCallback(desenharGrafico);
