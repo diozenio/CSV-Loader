@@ -36,3 +36,9 @@ function successFunction(data) {
     }
   }
 }
+
+function order(number) {
+  number.sort((a, b) => a - b);
+  number.reverse();
+  return number;
+}
