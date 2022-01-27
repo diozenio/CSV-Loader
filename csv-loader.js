@@ -25,11 +25,6 @@ window.onload = function () {
       }).done(successFunction2);
   };
 
-  function order(number) {
-    number.sort((a, b) => a - b);
-    number.reverse();
-    return number;
-  }
   
   function converter(string) {
     var result = string.replace(/\./g, "");
