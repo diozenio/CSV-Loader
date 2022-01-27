@@ -24,11 +24,7 @@ function successFunction2(data) {
           table += "</td>";
         }
         if (rowCell === 1 && rowCells[rowCell] != "TOTAL_VALOR") {
-          var result = rowCells[rowCell].replace(/\./g, "");
-          result = result.replace(/,/g, ".");
-          result = parseFloat(result);
-          total.push(result);
-          var ordernado = order(total);
+          total.push(rowCells[rowCell]);
         }
       }
     }
@@ -42,6 +38,6 @@ function successFunction2(data) {
   }
   table += "</tbody>";
   table += "</table>";
-  console.log(ordernado);
+  console.log(total);
   $("body").append(table);
 }

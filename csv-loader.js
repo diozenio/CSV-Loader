@@ -24,3 +24,20 @@ window.onload = function () {
         dataType: "text",
       }).done(successFunction2);
   };
+
+  function order(number) {
+    console.log(number);
+    number.sort(); // aqui ele vai ordernar do menor para o maior
+    console.log(number);
+    number.reverse(); // aqui ele vai inverter as posições fazendo o efeito desejado
+    console.log(number);
+    return number;
+  }
+  
+  function converter(string) {
+    var result = string.replace(/\./g, "");
+    result = result.replace(/,/g, ".");
+    result = parseFloat(result);
+    return result;
+  }
+  
