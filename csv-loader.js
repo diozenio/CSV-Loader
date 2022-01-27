@@ -22,7 +22,7 @@ window.onload = function () {
     $.ajax({
         url: "CSV/RepassesMunicipios.csv",
         dataType: "text",
-      }).done(successFunction2);
+      }).done(recursos);
   };
 
   

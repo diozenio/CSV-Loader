@@ -3,7 +3,7 @@ let valorFloat;
 let valorString;
 let sortedMunicipios;
 
-function successFunction2(data) {
+function recursos(data) {
   var allRows = data.split(/\r?\n|\r/);
   for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
     var rowCells = allRows[singleRow].split(";");
