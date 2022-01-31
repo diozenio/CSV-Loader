@@ -1,22 +1,29 @@
-table {
-  margin: 20px;
-  text-align: center;
-  border-collapse: collapse;
-  border: 1px solid #d4d4d4;
+body {
+  background: url(https://docs.microsoft.com/learn/achievements/introduction-to-web-development-social.png);
+  font-family: "Roboto", sans-serif;
 }
 
-tr:nth-child(even) {
-  background: #d4d4d4;
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F0FFF0;
 }
 
-th,
-td {
-  
-  padding: 10px 30px;
+.exibirGrafico {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-h5,
-span {
-  padding: 10px 30px;
+.exibirGrafico #grafico {
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
+.listaCSV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

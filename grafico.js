@@ -5,10 +5,10 @@ function desenharGrafico() {
   tabela.addColumn("string", "categorias");
   tabela.addColumn("number", "custeios");
   tabela.addRows([
-    ["Comunicação", custeio[0]],
-    ["Educação", custeio[1]],
-    ["Saúde", custeio[2]],
-    ["Segurança", custeio[3]],
+    ["Educação", custeio[0]],
+    ["Saúde", custeio[1]],
+    ["Segurança", custeio[2]],
+    ["Comunicação", custeio[3]],
   ]);
 
   var grafico = new google.visualization.ColumnChart(
