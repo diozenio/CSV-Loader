@@ -1,3 +1,5 @@
+// Os arquivos CSV's são carregados assim que a página carrega, chamando a função que armazenará os valores desejados
+
 window.onload = function () {
   $.ajax({
     url: "CSV/SecretariaComunicacao.csv",
@@ -32,6 +34,7 @@ window.onload = function () {
   
 };
 
+// função que remove os pontos e as vírgulas da string, transformando a váriavel em float
 function converter(string) {
     var result = string.replace(/\./g, "");
     result = result.replace(/,/g, ".");

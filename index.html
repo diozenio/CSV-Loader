@@ -9,49 +9,53 @@ Exibir lista com os 10 municípios que mais receberam recurso do governo em 2021
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Monitor de Gastos Públicos em Alagoas</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script>
-	<script src="https://www.gstatic.com/charts/loader.js">
-	</script>
-	<title>Monitor de Gastos Públicos em Alagoas</title>
-</head>
+  <body>
+    <div class="container">
+      <div class="containerGrafico">
+        <div class="exibirGrafico">
+          <!-- div relacionada ao GRÁFICO! -->
+          <div id="grafico"></div>
+        </div>
+      </div>
 
-<body>
-	<div class="container">
-		<div class="exibirGrafico">
-			<!-- div relacionada ao GRÁFICO! -->
-			<div id="grafico"></div>
-		</div>
-		<hr size="2" color="#C1CDC1">
-		<div class="listaCSV">
-			<!-- div relacionada às LISTAS! -->
-			<div class="lista">
-				<h3>Lista dos maiores recursos:</h3>
-			</div>
-			<div class="listaBeneficiados">
-				<h3>Lista dos maiores beneficiados:</h3>
-			</div>
-		</div>
-	</div>
-	<script src="./csv_loader.js">
-	</script>
-	<script src="./custeio.js">
-	</script>
-	<script src="./grafico.js">
-	</script>
-	<script src="./recursos.js">
-	</script>
-	<script src="./beneficiados.js">
-	</script>
-</body>
+      <hr size="2" color="#C1CDC1" />
 
+      <div class="listaCSV">
+
+        <!-- lista dos 10 maiores recursos -->
+        <div class="listaRecursos">
+          <h3>Lista dos maiores recursos:</h3>
+        </div>
+
+        <!-- lista dos 10 maiores beneficiados -->
+        <div class="listaBeneficiados">
+          <h3>Lista dos maiores beneficiados:</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- importação dos scripts  -->
+
+    <script src="./csv_loader.js"></script>
+    <script src="./custeio.js"></script>
+    <script src="./grafico.js"></script>
+    <script src="./recursos.js"></script>
+    <script src="./beneficiados.js"></script>
+  </body>
 </html>

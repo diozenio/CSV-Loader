@@ -1,4 +1,16 @@
+// responsividade do gráfico ao alterar o tamanho da tela
+$( window ).resize(function () {
+  width = $('.exibirGrafico').width();
+  height = $('.exibirGrafico').height();
+  desenharGrafico();
+});
+
+var height = $('.exibirGrafico').height();
+var width = $('.exibirGrafico').width();
 google.charts.load("current", { packages: ["corechart"] });
+
+
+// A função desenharGrafico utiliza uma biblioteca do Google para criar um gráfico de coluna
 
 function desenharGrafico() {
   var tabela = new google.visualization.DataTable();
@@ -16,8 +28,8 @@ function desenharGrafico() {
   );
   const options = {
       title: "Custeios",
-      height: 500,
-      width: 700,
+      height: height,
+      width: width,
   }
   grafico.draw(tabela, options);
 }
