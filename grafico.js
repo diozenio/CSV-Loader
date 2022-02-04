@@ -27,7 +27,6 @@ function desenharGrafico() {
     title: "Custeios",
     height: height,
     width: width,
-    isStacked: true,
   };
   grafico.draw(tabela, options);
 }

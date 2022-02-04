@@ -20,7 +20,7 @@ window.onload = function () {
     url: "CSV/SecretariaSeguranca.csv",
     dataType: "text",
   }).done(successFunction);
-
+  
   $.ajax({
     url: "CSV/RepassesMunicipios.csv",
     dataType: "text",
@@ -30,12 +30,14 @@ window.onload = function () {
     url: "CSV/Beneficiados.csv",
     dataType: "text",
   }).done(beneficiados);
+
+  
 };
 
 // função que remove os pontos e as vírgulas da string, transformando a váriavel em float
 function converter(string) {
-  var result = string.replace(/\./g, "");
-  result = result.replace(/,/g, ".");
-  result = parseFloat(result);
-  return result;
-}
+    var result = string.replace(/\./g, "");
+    result = result.replace(/,/g, ".");
+    result = parseFloat(result);
+    return result;
+  }
