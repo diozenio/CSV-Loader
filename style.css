@@ -1,13 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: url(https://docs.microsoft.com/learn/achievements/introduction-to-web-development-social.png);
+  overflow-x: hidden;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  background-color: #222;
+  background: url(https://docs.microsoft.com/learn/achievements/introduction-to-web-development-social.png);
 }
 
 .container {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #F0FFF0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerGrafico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 30px;
 }
 
 .exibirGrafico {
@@ -15,15 +35,38 @@ body {
   padding: 10px;
   justify-content: center;
   align-items: center;
-}
-
-.exibirGrafico #grafico {
-  border: 1px solid black;
-  border-radius: 2px;
+  background-color: white;
+  width: 60%;
+  height: 60vw;
+  max-height: 80vh;
+  border-radius: 15px;
 }
 
 .listaCSV {
+  padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .exibirGrafico {
+    width: 90%;
+    height: 90vh;
+    max-height: 100vh;
+  }
+  .listaCSV {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .listaRecursos,
+  .listaBeneficiados {
+    padding: 20px;
+  }
 }
