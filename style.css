@@ -55,8 +55,8 @@ hr {
 @media (max-width: 1000px) {
   .exibirGrafico {
     width: 90%;
-    height: 90vh;
-    max-height: 100vh;
+    height: 50vh;
+    max-height: 50vh;
   }
   .listaCSV {
     flex-direction: column;
